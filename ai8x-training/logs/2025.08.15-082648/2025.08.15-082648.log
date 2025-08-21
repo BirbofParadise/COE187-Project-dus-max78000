@@ -1,0 +1,23 @@
+2025-08-15 08:26:48,463 - Log file for this run: D:\B_School\School\TestMax\ai8x-training\logs\2025.08.15-082648\2025.08.15-082648.log
+2025-08-15 08:26:48,931 - Optimizer Type: <class 'torch.optim.adam.Adam'>
+2025-08-15 08:26:48,931 - Optimizer Args: {'lr': 0.001, 'betas': (0.9, 0.999), 'eps': 1e-08, 'weight_decay': 0.0, 'amsgrad': False}
+2025-08-15 08:37:31,313 - Dataset sizes:
+	training=72000
+	validation=8000
+	test=5000
+2025-08-15 08:37:31,314 - Reading compression schedule from: policies/schedule-catsdogs.yaml
+2025-08-15 08:37:31,318 - 
+
+2025-08-15 08:37:31,319 - Training epoch: 72000 samples (256 per mini-batch)
+2025-08-15 08:47:49,925 - Epoch: [0][  282/  282]    Overall Loss 0.592076    Objective Loss 0.592076    Top1 69.687500    LR 0.001000    Time 2.193594    
+2025-08-15 08:47:50,657 - --- validate (epoch=0)-----------
+2025-08-15 08:47:50,657 - 8000 samples (256 per mini-batch)
+2025-08-15 08:48:44,663 - Epoch: [0][   32/   32]    Loss 0.512035    Top1 74.350000    
+2025-08-15 08:48:45,565 - ==> Top1: 74.350    Loss: 0.512
+
+2025-08-15 08:48:45,566 - ==> Confusion:
+[[2854 1027]
+ [1025 3094]]
+
+2025-08-15 08:48:45,690 - 
+2025-08-15 08:48:45,691 - Log file for this run: D:\B_School\School\TestMax\ai8x-training\logs\2025.08.15-082648\2025.08.15-082648.log

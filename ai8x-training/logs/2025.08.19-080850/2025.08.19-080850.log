@@ -1,0 +1,46 @@
+2025-08-19 08:08:50,719 - Log file for this run: D:\B_School\School\TestMax\ai8x-training\logs\2025.08.19-080850\2025.08.19-080850.log
+2025-08-19 08:08:50,782 - => loading checkpoint D:/B_School/School/TestMax/ai8x-training/logs/2025.08.15-085658/best-quantized.pth.tar
+2025-08-19 08:08:50,785 - => Checkpoint contents:
++----------------------+-------------+-----------+
+| Key                  | Type        | Value     |
+|----------------------+-------------+-----------|
+| arch                 | str         | ai85cdnet |
+| compression_sched    | dict        |           |
+| epoch                | int         | 4         |
+| extras               | dict        |           |
+| optimizer_state_dict | dict        |           |
+| optimizer_type       | type        | Adam      |
+| state_dict           | OrderedDict |           |
++----------------------+-------------+-----------+
+
+2025-08-19 08:08:50,786 - => Checkpoint['extras'] contents:
++-----------------+--------+---------------+
+| Key             | Type   | Value         |
+|-----------------+--------+---------------|
+| best_epoch      | int    | 4             |
+| best_mAP        | int    | 0             |
+| best_top1       | float  | 86.7          |
+| clipping_method | str    | MAX_BIT_SHIFT |
+| current_mAP     | int    | 0             |
+| current_top1    | float  | 86.7          |
++-----------------+--------+---------------+
+
+2025-08-19 08:08:50,787 - Loaded compression schedule from checkpoint (epoch 4)
+2025-08-19 08:08:50,790 - => loaded 'state_dict' from checkpoint 'D:/B_School/School/TestMax/ai8x-training/logs/2025.08.15-085658/best-quantized.pth.tar'
+2025-08-19 08:08:50,797 - Optimizer Type: <class 'torch.optim.sgd.SGD'>
+2025-08-19 08:08:50,797 - Optimizer Args: {'lr': 0.1, 'momentum': 0.9, 'dampening': 0, 'weight_decay': 0.0001, 'nesterov': False}
+2025-08-19 08:08:51,147 - Dataset sizes:
+	training=72000
+	validation=8000
+	test=5000
+2025-08-19 08:08:51,148 - --- test ---------------------
+2025-08-19 08:08:51,148 - 5000 samples (256 per mini-batch)
+2025-08-19 08:09:28,570 - Test: [   20/   20]    Loss 0.398205    Top1 86.760000    
+2025-08-19 08:09:29,138 - ==> Top1: 86.760    Loss: 0.398
+
+2025-08-19 08:09:29,139 - ==> Confusion:
+[[2032  468]
+ [ 194 2306]]
+
+2025-08-19 08:09:29,147 - 
+2025-08-19 08:09:29,148 - Log file for this run: D:\B_School\School\TestMax\ai8x-training\logs\2025.08.19-080850\2025.08.19-080850.log
